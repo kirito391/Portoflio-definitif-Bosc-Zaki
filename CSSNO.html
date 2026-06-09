@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes Projets</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <style>
+    body,h1,h2,h3,h4,h5 {
+      font-family: "Raleway", sans-serif;
+    }
+/* LIENS */
+a{
+  color: inherit;              /* garde la couleur actuelle */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* hover = bleu */
+a:hover{
+  color: #0400ff;              /* bleu propre type material */
+  text-decoration: underline;  /* optionnel mais lisible */
+}
+    .w3-row-padding{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:stretch;
+    }
+
+    .w3-row-padding > .w3-third{
+      display:flex;
+    }
+
+    .w3-row-padding > .w3-third > div{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .image-box{
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border-radius:8px;
+    }
+
+    .image-box:hover{
+      transform:translateY(-3px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .canva-embed{
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 141.4286%;
+      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      margin: 1.2em 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .canva-embed iframe{
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      border:none;
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- SIDEBAR -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+
+  <h3 class="w3-padding-64 w3-center">
+    <b>Zaki<br>Bosc</b>
+  </h3>
+
+  <a href="index.html" class="w3-bar-item w3-button">À Propos de moi</a>
+  <a href="Stage.html" class="w3-bar-item w3-button">Stage</a>
+  <a href="Projets.html" class="w3-bar-item w3-button">STI2D</a>
+  <a href="CSSNO.html" class="w3-bar-item w3-button">CS SNO</a>
+
+</nav>
+
+<!-- TOP BAR -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Zaki Bosc</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity"
+onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- PAGE -->
+<div class="w3-main" style="margin-left:300px">
+
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-padding-32">
+    <h2 class="w3-text-light-grey"><b>Compétences Acquises</b></h2>
+  </div>
+
+  <!-- CONTENU -->
+  <div class="w3-row-padding w3-padding-32">
+
+    <!-- BLOC 1 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-white w3-padding image-box">
+
+        <h4><b>Bloc 1</b></h4>
+
+        <ul>
+          <li>
+            <a href="pdf/Collaborer_Mode_Projet.pdf" target="_blank">
+              Collaborer en mode projet
+            </a>
+          </li>
+
+          <br>
+
+          <li>
+            <a href="Audit_MASSE.pdf" target="_blank">
+              Participer à la mise en place et à l'actualisation d'un site web
+            </a>
+          </li>
+
+          <br>
+
+          <li>
+            Valorisation de la présence sur les médias sociaux
+
+            <ul>
+              <li>
+                Flyer Club d'Escalade Haute Rive
+                <div class="canva-embed">
+                  <iframe loading="lazy"
+                    src="https://www.canva.com/design/DAGzzO6gbGY/DABvKCDrv5Z1g7RyVSxoYA/view?embed">
+                  </iframe>
+                </div>
+              </li>
+
+              <li>
+                Flyer AMAP
+                <div class="canva-embed">
+                  <iframe loading="lazy"
+                    src="https://www.canva.com/design/DAG0cY-tJ60/74KpmKa_vFE_BnAoWCvV_w/view?embed">
+                  </iframe>
+                </div>
+              </li>
+
+              <li>
+                Newsletter Altissimo
+                <div class="canva-embed">
+                  <iframe loading="lazy"
+                    src="https://www.canva.com/design/DAHAQrnvcUE/ftJz_zME1BewpCwpFQD3pQ/view?embed">
+                  </iframe>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- BLOC 2 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-white w3-padding image-box">
+
+<h4><b>Bloc 2</b></h4>
+
+<ul>
+  <li>
+    Participation à la gestion des outils bureautiques et collaboratifs
+
+    <ul>
+      <li>
+        Travail Excel
+
+        <ul>
+          <li>
+            <a href="TP_RATRAPPAGE_SNO_BOSC_ZAKI.xlsm" target="_blank">
+              Télécharger le fichier Excel
+            </a>
+          </li>
+
+          <li>
+            <a href="tp rattrapage.pdf" target="_blank">
+              Consignes du travail Excel
+            </a>
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </li>
+</ul>
+
+          <br>
+
+          <li>
+            Gestion des outils numériques et applications métier
+
+            <ul>
+              <li>
+                Système d'informations numérisé (Microsoft Access)
+
+                <div class="canva-embed">
+                  <iframe loading="lazy"
+                    src="https://www.canva.com/design/DAG1tUjWIAc/Zy4-TwinfTInDA5QnIn5BQ/view?embed">
+                  </iframe>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <br>
+
+          <li>
+            <a href="Compte rendu Scénario 3 Zaki Bosc.odt" target="_blank">
+              Contribution à la sécurité du système d'information
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- BLOC 3 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-white w3-padding image-box">
+
+        <h4><b>Bloc 3</b></h4>
+
+        <ul>
+          <li>
+            Sensibilisation à la sécurité informatique
+
+            <div class="canva-embed" style="padding-top:56.25%;">
+              <iframe loading="lazy"
+                src="https://www.canva.com/design/DAHBlszAaQk/Hvci-yCaDClSxUcfNP7-Zw/view?embed">
+              </iframe>
+            </div>
+          </li>
+
+          <br>
+
+          <li>
+            Soutien aux utilisateurs des services numériques
+
+            <div class="canva-embed" style="padding-top:100%;">
+              <iframe loading="lazy"
+                src="https://www.canva.com/design/DAHBrc4HGTI/umvZd_By9Eml8E-2FYo33A/view?embed">
+              </iframe>
+            </div>
+          </li>
+
+          <br>
+
+          <li>
+            Exploitation d'une documentation technique en anglais
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function w3_open(){
+  document.getElementById("mySidebar").style.display="block";
+  document.getElementById("myOverlay").style.display="block";
+}
+
+function w3_close(){
+  document.getElementById("mySidebar").style.display="none";
+  document.getElementById("myOverlay").style.display="none";
+}
+</script>
+
+</body>
+</html>

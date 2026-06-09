@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mes Projets</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Raleway", sans-serif
+}
+
+.video-box {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 6px;
+}
+
+.video-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.video-box:hover iframe {
+  transform: scale(1.01);
+  opacity: 0.95;
+}
+
+/* 📄 Liens Diapositive */
+
+.diapo-link{
+  color:#444;
+  text-decoration:none;
+  font-weight:bold;
+  transition: color 0.25s ease;
+}
+
+.diapo-link:hover{
+  color:#0400ff;
+  text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+
+<h3 class="w3-padding-64 w3-center">
+<b>Zaki<br>Bosc</b>
+</h3>
+
+<a href="index.html" class="w3-bar-item w3-button">À Propos de moi</a> 
+<a href="Stage.html" class="w3-bar-item w3-button">Stage</a>
+<a href="Projets.html" class="w3-bar-item w3-button">STI2D</a> 
+<a href="CSSNO.html" class="w3-bar-item w3-button">CS SNO</a>
+
+</nav>
+
+<!-- Top menu -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+<span class="w3-left w3-padding">Zaki Bosc</span>
+
+<a href="javascript:void(0)"
+class="w3-right w3-button w3-white"
+onclick="w3_open()">☰</a>
+
+</header>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity"
+onclick="w3_close()"
+style="cursor:pointer"
+id="myOverlay"></div>
+
+<!-- PAGE -->
+<div class="w3-main" style="margin-left:300px">
+
+<div class="w3-hide-large" style="margin-top:83px"></div>
+
+<div class="w3-container w3-dark-grey w3-center w3-padding-32">
+<h2 class="w3-text-light-grey"><b>Stage</b></h2>
+</div>
+
+
+<div class="w3-row-padding w3-padding-32">
+
+<!-- STAGE 1 -->
+<div class="w3-half w3-margin-bottom">
+<div class="w3-white w3-padding video-box">
+
+<h4><b>Stage 1</b></h4>
+
+<iframe
+src="https://www.youtube.com/embed/DiXCbouCid8"
+title="Stage 1"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+<p>
+Stage de 6 semaines au Lycée des métiers Hôtellerie et Tourisme
+</p>
+
+<p>
+<a href="https://canva.link/frhohzns1vvmz5c"
+class="diapo-link"
+target="_blank">
+Diaporama
+</a>
+</p>
+<h5><b>Compétences développées :</b></h5>
+    <ul>
+      <li>Dépannage informatique </li>
+      <li>Mise a jour du site du lycée (ENT) </li>
+      <li>Installation d'imprimante</li>
+      <li>Projets html pour le site du lycée</li>
+      projets 1
+      Projets 2
+      <li>Déploiement d'ordinateur sur le réseau</li>
+      <li></li>
+      <li>Logique algorithmique</li>
+      <li>Tests et débogage</li>
+      <li>Validation du fonctionnement d'un système</li>
+    </ul> 
+</div>
+</div>
+
+
+<!-- STAGE 2 -->
+<div class="w3-half w3-margin-bottom">
+<div class="w3-white w3-padding video-box">
+
+<h4><b>Stage 2</b></h4>
+
+<iframe
+src="https://www.youtube.com/embed/xWp_9WLv1Vw"
+title="Stage 2"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+<p>
+Stage de 6 semaines dans la Cité Scolaire de Luchon :
+Lycée polyvalent Edmond Rostand et Lycée Professionnel des Métiers du Bois
+</p>
+
+<p>
+<a href="https://canva.link/frhohzns1vvmz5c"
+class="diapo-link"
+target="_blank">
+Diaporama
+</a>
+</p>
+<h5><b>Compétences développées :</b></h5>
+    <ul>
+      <li>Utilisation d'un rasbery PI 3</li>
+      <li>Dépannage informatique</li>
+      <li>Déploiement d'ordinateur sur le réseau</li>
+      <li>Installation de drivers/pilotes</li>
+      <li>Autonomie/Organisation</li>
+      <li>Assemblage d’un kit électronique (arcade)</li>
+      <li>Inventaire</li>
+      <li>Transfert de barette de RAM</li>
+
+    </ul> 
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function w3_open(){
+document.getElementById("mySidebar").style.display="block";
+document.getElementById("myOverlay").style.display="block";
+}
+
+function w3_close(){
+document.getElementById("mySidebar").style.display="none";
+document.getElementById("myOverlay").style.display="none";
+}
+</script>
+
+</body>
+</html>

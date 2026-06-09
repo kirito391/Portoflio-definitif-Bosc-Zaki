@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>STI2D</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <style>
+    body,h1,h2,h3,h4,h5 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    /* 🔗 LIENS */
+    a {
+      color: #222;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    a:hover {
+      color: #0400ff;
+    }
+
+    /* 🧱 CARTES PROJETS */
+    .w3-third {
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .w3-third:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* 🖼️ IMAGES */
+    .w3-third img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: -6px;
+      opacity: 0.85;
+      cursor: pointer;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .w3-third img:hover {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
+    /* 🧾 CONTENU */
+    .w3-third .w3-container {
+      flex: 1;
+      transition: background 0.25s ease;
+    }
+
+    .w3-third:hover .w3-container {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Zaki<br>Bosc</b></h3>
+
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">À Propos de moi</a> 
+    <a href="Stage.html" class="w3-bar-item w3-button">Stage</a> 
+    <a href="Projets.html" onclick="w3_close()" class="w3-bar-item w3-button">STI2D</a> 
+ <a href="CSSNO.html" class="w3-bar-item w3-button">CS SNO</a> 
+</nav>
+
+<!-- Top menu -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Zaki Bosc</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity"
+onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- PAGE -->
+<div class="w3-main" style="margin-left:300px">
+
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-padding-32">
+    <h2 class="w3-text-light-grey"><b>Mes Projets</b></h2>
+  </div>
+
+  <!-- PROJETS -->
+<div class="w3-row-padding w3-padding-32" style="display:flex;flex-wrap:wrap;align-items:stretch;">
+
+<!-- Projet 3 -->
+<div class="w3-third w3-margin-bottom" style="display:flex;">
+  <div class="w3-container w3-white" style="display:flex;flex-direction:column;width:100%;">
+    
+    <img src="MaisonArduino.jpg" onclick="onClick(this)" style="width:100%;height:300px;object-fit:cover;">
+
+    <h4>
+      <a href="https://www.canva.com/design/DAGkVg4U7pA/8vG8gGJ9q35Rn1Mi2pRzTw/edit" target="_blank">
+        <b>Projet 3 : Domotique Défensive</b>
+      </a>
+    </h4>
+
+    <p>
+      A l'aide d'une <b>maquette</b>, d'une <b>carte arduino</b> et différents <b>capteurs</b>
+      (Line finder, magnetic switch, frame emmiter, pmr), nous avons modélise le
+      <b>système</b>, codage sur le logiciel <b>Arduino</b> pour rendre la maquette
+      fonctionnel et tentative de codage d'application mobile pour faire fonctionner
+      le système d'alarme a distance (Activer/désactiver l'alarme)
+    </p>
+
+    <h5><b>Compétences développées :</b></h5>
+    <ul>
+      <li>Programmation Arduino</li>
+      <li>Automatisation d'un système</li>
+      <li>Conception d'une solution technique</li>
+      <li>Analyse fonctionnelle</li>
+      <li>Intégration de capteurs</li>
+      <li>Développement d'un système embarqué</li>
+      <li>Logique algorithmique</li>
+      <li>Tests et débogage</li>
+      <li>Validation du fonctionnement d'un système</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- Projet 2 -->
+<div class="w3-third w3-margin-bottom" style="display:flex;">
+  <div class="w3-container w3-white" style="display:flex;flex-direction:column;width:100%;">
+
+    <img src="ECO-BAT.jpg" onclick="onClick(this)" style="width:100%;height:300px;object-fit:cover;">
+
+    <h4>
+      <a href="https://www.canva.com/design/DAF6tj2KuyI/_bbdI81dUOKoRGPR24zmzQ/edit" target="_blank">
+        <b>Projet 2 : Abri à Chauve-Souris</b>
+      </a>
+    </h4>
+
+    <p>
+      Fabrication d’un abri avec <b>découpe laser</b> et modélisation
+      <b>SolidWorks</b>. Nous avons réfléchi à plusieurs <b>solutions possibles</b>
+      afin de répondre au besoin. Après avoir comparé différentes solutions trouvées,
+      nous avons sélectionné la plus adaptée au besoin. À partir de la solution
+      retenue, nous avons rédigé le <b>cahier des charges</b>, puis modélisé en 3D
+      sur <b>SolidWorks</b> un prototype de l'abri, puis nous avons découpé les
+      pièces avec une <b>découpe laser</b> et imprimé en <b>3D</b> des pièces
+      supplémentaires, et enfin nous avons assemblé l'ensemble des pièces.
+    </p>
+
+    <h5><b>Compétences développées :</b></h5>
+    <ul>
+      <li>Analyse des besoins</li>
+      <li>Recherche de solutions techniques</li>
+      <li>Conception d'un produit</li>
+      <li>Réalisation de croquis techniques</li>
+      <li>Modélisation 3D (SolidWorks)</li>
+      <li>Découpe laser</li>
+      <li>Impression 3D</li>
+      <li>Assemblage de composants</li>
+      <li>Fabrication numérique</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- Projet 1 -->
+<div class="w3-third w3-margin-bottom" style="display:flex;">
+  <div class="w3-container w3-white" style="display:flex;flex-direction:column;width:100%;">
+
+    <img src="VRUM.jpg" onclick="onClick(this)" style="width:100%;height:300px;object-fit:cover;">
+
+    <h4><b>Projet 1 : Voiture télécommandée</b></h4>
+
+    <p>
+      En classe de seconde, en groupe, nous avons assemblé une
+      <b>voiture télécommandée</b> avec <b>Arduino</b> et
+      <b>impression 3D</b>. Nous avons fait un
+      <b>cahier des charges</b>, modélisé un <b>prototype</b>, puis
+      assemblé avec les pièces que nous avions en notre possession.
+    </p>
+
+    <h5><b>Compétences développées :</b></h5>
+    <ul>
+      <li>Travail en équipe</li>
+      <li>Gestion de projet</li>
+      <li>Organisation du temps</li>
+      <li>Rédaction d'un cahier des charges</li>
+      <li>Analyse des besoins</li>
+      <li>Programmation Arduino</li>
+      <li>Modélisation 3D</li>
+      <li>Résolution de problèmes techniques</li>
+      <li>Tests et validation d'un prototype</li>
+    </ul>
+
+  </div>
+</div>
+
+</div>
+  <!-- MODAL IMAGE -->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-padding-64">
+      <img id="img01" class="w3-image">
+    </div>
+  </div>
+
+</div>
+
+<script>
+function w3_open(){
+  document.getElementById("mySidebar").style.display="block";
+  document.getElementById("myOverlay").style.display="block";
+}
+
+function w3_close(){
+  document.getElementById("mySidebar").style.display="none";
+  document.getElementById("myOverlay").style.display="none";
+}
+
+function onClick(element){
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
